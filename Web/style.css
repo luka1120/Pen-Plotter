@@ -1,0 +1,19 @@
+
+.container{
+	display flex;
+	justify-content center;
+}
+.item{
+	width300px;
+	padding 5px;
+}
+
+
+
+.img_item{
+	width300px;
+}
+.img_container{
+	overflow scroll;
+	white-spacenowrap;
+}

@@ -1,0 +1,107 @@
+<html>
+<!--This example uses the default bootstrap stylesheet-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--provides a full-width container that can expand or collapse based on the size of viewport-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-sm-12 col-xs-12">
+            <nav id="navbar">
+                <h3>CNC Pen Plotter</h3>
+                <!--content stacking for smaller screens-->
+                <ul class="nav nav-pills nav-stacked">
+                 <!--internal linking to the respective sections-->
+                    <a class="nav-link" href="#აღწერა" rel="internal">
+                        <li>აღწერა</li>
+                    </a>
+                    <a class="nav-link" href="გამოყენებული ნაწილები" rel="internal">
+                        <li>გამოყენებული ნაწილები</li>
+                    </a>
+                    <a class="nav-link" href="#პროექტის შესახებ" rel="internal">
+                        <li>პროექტის შესახებ</li>
+                    </a>
+                    <a class="nav-link" href="#სურათები" rel="internal">
+                        <li>სურათები</li>
+                    </a>
+                    <a class="nav-link" href="#გუნდის წევრები" rel="internal">
+                        <li>გუნდის წევრები</li>
+                    </a>
+                 </ul>
+            </nav>
+        </div>
+        <div class="col-md-10 col-sm-12 col-xs-12">
+            <main id="main-doc">
+                <section class="main-section" id="აღწერა" >
+                 <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
+                    <h3 style = "background: black; color: white">აღწერა</h3>
+                    <article>
+                    <p>პენ პლოტერი, კომპიუტერით კონტროლირებადი მანქანა, რომელიც ხატავს გრაფიკულ გმაოსახულებას ან ტექტს სიზუსტითა და
+                    სისწრაფით. </p>
+
+                    <div class="container">
+                      <video height=25% width=25% controls>
+                        <source src="video.mp4" class="item">
+                      </video>
+	                    <img src="plotter.jpg" height=25% width=25% alt="პლოტერის ფოტო" class="item">
+
+                    </div>
+                        </article>
+                </section>
+                <section class="main-section" id="გამოყენებული ნაწილები">
+                    <h3 style = "background: black; color: white">გამოყენებული ნაწილები</h3>
+                    <article>
+<!--creating list using html-->
+                        <li>არდუინო უნო</li>
+                        <li>CNC შილდი</li>
+                        <li>Nema 17</li>
+                        <li>სერვო</li>
+                        <li>MGN15H ბლოკით</li>
+                        <li>ქრომირებული ღერზი</li>
+                        <li>ძრავის კბილანა</li>
+                        <li>გლუვი კბილანა</li>
+                        <li>წრფივი მოძრაობის საკისარი</li>
+                        <li>ბოლტები და ჭანჭიკები</li>
+                        <li>GT2 ღვედი</li>
+                        <li>3D პრინტერით დაბეჭდილი ნაწილები</li>
+                        </artice>
+                </section>
+                <section class="main-section" id="პროქეტის შესახებ">
+                    <h3 style = "background: black; color: white">პროექტის შესახებ</h3>
+                    <article>
+                        <p>პლოტერი მუშაობს ორ X_სა და Y ღერძზე, რომლის მოძრაობას უზრუნველყობს ბიჯური ძრავი, ხოლო კალამს
+                          მართავს სერვო . მას შეუძლია რთული ხაზებით ნახატების დახატვა.
+                          კოორდინატები იტვირთება მანქანის კონტროლერი პროგრამით.
+                          გამოსახულების ფაილი გარდაიქმნება G-კოდად სპეციალური პროგრამის მეშვეობით.
+                           შემდეგ კოდი გადაეცემა მიკროკონტროლერს, რომელიც
+                           აძლევს ძრავებს მოძრაობის ისნტრუქციას დახატვისთვის.</p>
+
+                    </article>
+                </section>
+                <section class="main-section" id="სურათები">
+                    <h3 style = "background: black; color: white">სურათები</h3>
+                    <article>
+                      <div class="img_container">
+	                       <img src="ink.jpg" height=25% width=25% alt="პროგრამის ფოტო" class="img_item">
+	                        <img src="peppr.jpg" height=25% width=25% alt="პროგრამის ფოტო" class="img_item">
+	                         <img src="plotter.jpg" height=25% width=25% alt="პლოტერის ფოტო" class="img_item">
+                         </div>
+                    </article>
+                </section>
+                <section class="main-section" id="გუნდის წევრები">
+                    <h3 style = "background: black; color: white">გუნდის წევრები</h3>
+                    <p>პროექტზე მუშაობდნენ:
+                      <li>ლუკა ფარცვანია</li>
+                      <li>ალექსანდრე რობაქიძე</li>
+                      <li>ვახო გრიგოლიშვილი </li>
+                      <li>რომანი ტუნაძე </li>
+                      <li>ნიკა გილიგაშვილი</li>
+
+
+                    </p>
+                </section>
+            </main>
+        </div>
+    </div>
+</div>
+
+</html>
